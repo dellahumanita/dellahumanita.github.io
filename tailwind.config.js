@@ -4,9 +4,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'purple': '#6153DB',
-      'yellow': '#FFF970',
-      'pink': '#AC71BE'
+      'dark': '#6153DB',
+      'light': '#FFF970',
+      'mid': '#AC71BE'
     },
     fontFamily: {
       'sans': ['"Source Code Pro"', 'sans-serif'],
@@ -24,6 +24,8 @@ module.exports = {
         'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))',
         'gradient-radial-at-bl': 'radial-gradient(ellipse at bottom left, var(--tw-gradient-stops))',
         'gradient-radial-at-br': 'radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))',
+
+        'noise': "url('./Assets/noise.png')"
       }, 
     },
   },
