@@ -15,16 +15,16 @@ import Contact from './Contact';
 function Main() {
     return (
         <HashRouter>
-            <div className="">
-                <h1 className="font-bold underline">Portfolio</h1>
-                <ul className="header">
-                    <li><NavLink to="/">Home</NavLink></li>
+            <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-yellow-200 text-white">
+
+                <ul className="flex flex-row justify-between text-xl font-sans font-semibold px-4 py-4">
+                    <li><NavLink to="/">🌸</NavLink></li>
                     <li><NavLink to="/about">about</NavLink></li>
                     <li><NavLink to="/projects">projects</NavLink></li>
                     <li><NavLink to="/contact">contact</NavLink></li>
                 </ul>
 
-                <div className="">
+                <div className="container mx-auto">
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
