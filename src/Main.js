@@ -15,13 +15,13 @@ import Contact from './Contact';
 function Main() {
     return (
         <HashRouter>
-            <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-yellow-200 text-white">
+            <div className="min-h-screen bg-gradient-radial-at-bl from-indigo-500 via-purple-500 to-yellow-200 text-white">
 
                 <ul className="flex flex-row justify-between text-xl font-sans font-semibold px-4 py-4">
-                    <li><NavLink to="/">🌸</NavLink></li>
-                    <li><NavLink to="/about">about</NavLink></li>
-                    <li><NavLink to="/projects">projects</NavLink></li>
-                    <li><NavLink to="/contact">contact</NavLink></li>
+                    <li className="hover:text-indigo-500"><NavLink to="/">🌸</NavLink></li>
+                    <li className="hover:text-indigo-500"><NavLink to="/about">about</NavLink></li>
+                    <li className="hover:text-indigo-500"><NavLink to="/projects">projects</NavLink></li>
+                    <li className="hover:text-indigo-500"><NavLink to="/contact">contact</NavLink></li>
                 </ul>
 
                 <div className="container mx-auto">

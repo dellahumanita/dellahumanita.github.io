@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <h2>Let's chat!</h2>
-            </div>
-        )
-    }
+function Contact() {
+
+    return (
+        <div className="flex flex-col items-center justify-center h-screen">
+            <h1 className="text-8xl">Let's chat!</h1>
+        </div>
+    );
 }
+
 
 export default Contact;
