@@ -18,7 +18,7 @@ function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full justify-items-stretch">
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
-                            <h2>LifePlus</h2>
+                            <h2 className="font-semibold text-2xl hover:italic">LifePlus</h2>
                             <a className="hover:text-dark" href="https://github.com/dellahumanita/lifeplus">
                                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                             </a>
@@ -44,7 +44,7 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
 
                         <div className="flex flex-row justify-between pb-2">
-                            <h2>Ada's Team Site</h2>
+                            <h2 className="font-semibold text-2xl hover:italic">Ada's Team Site</h2>
                             <span className="flex flex-row gap-x-3">
                                 <a className="hover:text-dark" href="https://github.com/adasdevelopers/adas-team-website">
                                     <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
@@ -70,7 +70,7 @@ function Projects() {
                     </div>
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
-                            <h2>Pocketbook</h2>
+                            <h2 className="font-semibold text-2xl hover:italic">Pocketbook</h2>
                             <a className="hover:text-dark" href="https://github.com/dellahumanita/PocketBook">
                                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                             </a>
