@@ -9,7 +9,7 @@ function Contact() {
     library.add(fab, faEnvelope);
     return (
         <div className="flex flex-col items-center justify-center h-screen space-y-7">
-            <h1 className="text-8xl">Let's chat!</h1>
+            <h1 className="font-serif hover:italic text-7xl md:text-9xl p-5 text-center">Let's chat!</h1>
 
             <div className="flex flex-row justify-between space-x-8">
                 <a className="hover:text-yellow-200"
