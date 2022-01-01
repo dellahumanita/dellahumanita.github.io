@@ -3,7 +3,6 @@ import {
     Route, 
     NavLink,
     Routes,
-    BrowserRouter,
     HashRouter
 } from "react-router-dom";
 
