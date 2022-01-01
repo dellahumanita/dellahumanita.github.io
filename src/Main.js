@@ -17,17 +17,17 @@ export default function Main() {
         <BrowserRouter>
             <div className="min-h-screen bg-gradient-radial-at-bl from-dark via-mid to-light text-white">
 
-                <ul className="flex flex-row justify-between text-xl font-sans font-semibold px-4 py-4">
-                    <li className="hover:text-indigo-500">
+                <ul className="flex flex-row justify-between text-xl md:text-2xl font-sans font-semibold px-4 py-4">
+                    <li className="hover:text-dark">
                         <NavLink to="/">🌸</NavLink>
                     </li>
-                    <li className="hover:text-indigo-500">
+                    <li className="hover:text-dark">
                         <NavLink to="/about">about</NavLink>
                     </li>
-                    <li className="hover:text-indigo-500">
+                    <li className="hover:text-dark">
                         <NavLink to="/projects">projects</NavLink>
                     </li>
-                    <li className="hover:text-indigo-500">
+                    <li className="hover:text-dark">
                         <NavLink to="/contact">contact</NavLink>
                     </li>
                 </ul>
