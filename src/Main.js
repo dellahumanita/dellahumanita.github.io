@@ -13,26 +13,27 @@ import Contact from './Pages/Contact';
 
 
 export default function Main() {
+
     return (
         <BrowserRouter>
-            <div className="min-h-screen bg-gradient-radial-at-bl from-dark via-mid to-light text-white">
+            <div className="bg-gradient-radial-at-bl from-dark via-mid to-light text-white flex flex-col h-full justify-between">
 
                 <ul className="flex flex-row justify-between text-xl md:text-2xl font-sans font-semibold px-4 py-4">
-                    <li className="hover:text-dark">
+                    <li className="hover:text-dark active:text-dark">
                         <NavLink to="/">🌸</NavLink>
                     </li>
-                    <li className="hover:text-dark">
+                    <li className="hover:text-dark active:text-dark">
                         <NavLink to="/about">about</NavLink>
                     </li>
-                    <li className="hover:text-dark">
+                    <li className="hover:text-dark active:text-dark">
                         <NavLink to="/projects">projects</NavLink>
                     </li>
-                    <li className="hover:text-dark">
+                    <li className="hover:text-dark active:text-dark">
                         <NavLink to="/contact">contact</NavLink>
                     </li>
                 </ul>
 
-                <div className="container mx-auto">
+                <div className="container mx-auto mb-auto">
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
@@ -42,6 +43,10 @@ export default function Main() {
 
 
                 </div>
+
+                <footer className="flex w-full justify-end px-4 py-2">
+                    <span>Made with ♥️ in 2022</span>
+                </footer>
             </div>
         </BrowserRouter>
     );
