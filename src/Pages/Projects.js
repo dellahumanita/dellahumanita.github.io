@@ -19,13 +19,13 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
                             <h2>LifePlus</h2>
-                            <a href="https://github.com/dellahumanita/lifeplus">
+                            <a className="hover:text-dark" href="https://github.com/dellahumanita/lifeplus">
                                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                             </a>
                         </div>
                         
                         <p className="py-3">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
+                            A productivity web app that implements the concept of building small habits. Inspired by James Clear's book, Atomic Habits. 
                         </p>
 
                         <ul className="flex flex-row flex-wrap gap-4 pt-5">
@@ -46,10 +46,10 @@ function Projects() {
                         <div className="flex flex-row justify-between pb-2">
                             <h2>Ada's Team Site</h2>
                             <span className="flex flex-row gap-x-3">
-                                <a href="https://github.com/adasdevelopers/adas-team-website">
+                                <a className="hover:text-dark" href="https://github.com/adasdevelopers/adas-team-website">
                                     <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                                 </a>
-                                <a href="https://adasdevelopers.github.io/adas-team-website/#/">
+                                <a className="hover:text-dark" href="https://adasdevelopers.github.io/adas-team-website/#/">
                                     <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="lg" />
                                 </a>
 
@@ -57,7 +57,7 @@ function Projects() {
                         </div>
                         
                         <p className="py-3">
-                            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+                            A 2021-remake of the Ada's Team website as part of the Ada's Developers Fall 2020 cohort.
                         </p>
                         <ul className="flex flex-row flex-wrap gap-4 pt-5">
                             <li>
@@ -71,12 +71,12 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
                             <h2>Pocketbook</h2>
-                            <a href="https://github.com/dellahumanita/PocketBook">
+                            <a className="hover:text-dark" href="https://github.com/dellahumanita/PocketBook">
                                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                             </a>
                         </div>
                         <p className="py-3">
-                            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                            A book sharing app where users can share the books they have, and borrow from others.
                         </p>
 
                         <ul className="flex flex-row flex-wrap gap-4 pt-5">

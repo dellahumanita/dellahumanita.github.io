@@ -17,9 +17,7 @@
         @apply font-sans;
     }
 
-    a {
-        @apply hover:text-dark;
-    }
+    
 }
 
 
