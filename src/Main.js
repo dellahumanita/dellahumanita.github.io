@@ -3,7 +3,8 @@ import {
     Route, 
     NavLink,
     Routes,
-    BrowserRouter
+    BrowserRouter,
+    HashRouter
 } from "react-router-dom";
 
 import Home from './Pages/Home';
@@ -15,7 +16,7 @@ import Contact from './Pages/Contact';
 export default function Main() {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="bg-gradient-radial-at-bl from-dark via-mid to-light text-white flex flex-col h-full justify-between">
 
                 <ul className="flex flex-row justify-between text-xl md:text-2xl font-sans font-semibold px-4 py-4">
@@ -48,6 +49,6 @@ export default function Main() {
                     <span>Made with ♥️ in 2022</span>
                 </footer>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
