@@ -11,8 +11,14 @@
         @apply text-2xl;
         @apply hover:italic;
     }
+
+
     p {
         @apply font-sans;
+    }
+
+    a {
+        @apply hover:text-dark;
     }
 }
 

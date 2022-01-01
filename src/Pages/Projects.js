@@ -2,11 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 
 function Projects() {
 
-    library.add(fab);
+    library.add(fab, fas);
 
         return (
             <div className="flex flex-col h-screen justify-center m-auto gap-4">
@@ -18,9 +19,9 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
                             <h2>LifePlus</h2>
-                            <span>
-                                <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-                            </span>
+                            <a href="https://github.com/dellahumanita/lifeplus">
+                                <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+                            </a>
                         </div>
                         
                         <p className="py-3">
@@ -33,6 +34,7 @@ function Projects() {
                             </li>
                             <li>
                                 <FontAwesomeIcon icon={['fab', 'js']} size="2x" />
+                                
                             </li>
                             <li>Flask</li>
                         </ul>
@@ -42,9 +44,15 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
 
                         <div className="flex flex-row justify-between pb-2">
-                            <h2>Ada's Team Website</h2>
-                            <span>
-                                <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+                            <h2>Ada's Team Site</h2>
+                            <span className="flex flex-row gap-x-3">
+                                <a href="https://github.com/adasdevelopers/adas-team-website">
+                                    <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+                                </a>
+                                <a href="https://adasdevelopers.github.io/adas-team-website/#/">
+                                    <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="lg" />
+                                </a>
+
                             </span>
                         </div>
                         
@@ -63,9 +71,9 @@ function Projects() {
                     <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
                         <div className="flex flex-row justify-between pb-2">
                             <h2>Pocketbook</h2>
-                            <span>
-                                <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-                            </span>
+                            <a href="https://github.com/dellahumanita/PocketBook">
+                                <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+                            </a>
                         </div>
                         <p className="py-3">
                             Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
