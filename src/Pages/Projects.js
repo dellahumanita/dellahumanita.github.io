@@ -3,97 +3,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+
+import { projects } from "../Assets/constants";
+import ProjectCard from "../Components/ProjectCard";
 
 
 function Projects() {
 
     library.add(fab, fas);
+    console.log(projects);
 
-        return (
-            <div className="flex flex-col h-screen justify-center m-auto gap-4">
-                <header className="flex justify-start pb-5">
-                    <h1 className="text-7xl md:text-8xl hover:italic">Projects</h1>
-                </header>
+    return (
+        <div className="flex flex-col h-screen justify-center m-auto gap-4">
+            <header className="flex justify-start pb-5">
+                <h1 className="text-7xl md:text-8xl hover:italic">Projects</h1>
+            </header>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full justify-items-stretch">
-                    <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
-                        <div className="flex flex-row justify-between pb-2">
-                            <h2 className="font-semibold text-2xl hover:italic">LifePlus</h2>
-                            <a className="hover:text-dark" href="https://github.com/dellahumanita/lifeplus">
-                                <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
-                            </a>
-                        </div>
-                        
-                        <p className="py-3">
-                            A productivity web app that implements the concept of building small habits. Inspired by James Clear's book, Atomic Habits. 
-                        </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full justify-items-stretch">
+                {projects.map((projectDetails, i) => 
+                    <div 
+                        className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30"
+                        whileHover={{ scale: 1.1 }}>
+                            <ProjectCard 
+                                details={projectDetails}
+                            />
+                    </div> 
+                )}
 
-                        <ul className="flex flex-row flex-wrap gap-4 pt-5">
-                            <li>
-                                <FontAwesomeIcon icon={['fab', 'python']} size="2x" /> 
-                            </li>
-                            <li>
-                                <FontAwesomeIcon icon={['fab', 'js']} size="2x" />
-                                
-                            </li>
-                            <li>Flask</li>
-                        </ul>
-
-                        <div></div>
-                    </div>
-                    <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
-
-                        <div className="flex flex-row justify-between pb-2">
-                            <h2 className="font-semibold text-2xl hover:italic">Ada's Team Site</h2>
-                            <span className="flex flex-row gap-x-3">
-                                <a className="hover:text-dark" href="https://github.com/adasdevelopers/adas-team-website">
-                                    <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
-                                </a>
-                                <a className="hover:text-dark" href="https://adasdevelopers.github.io/adas-team-website/#/">
-                                    <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="lg" />
-                                </a>
-
-                            </span>
-                        </div>
-                        
-                        <p className="py-3">
-                            A 2021-remake of the Ada's Team website as part of the Ada's Developers Fall 2020 cohort.
-                        </p>
-                        <ul className="flex flex-row flex-wrap gap-4 pt-5">
-                            <li>
-                                <FontAwesomeIcon icon={['fab', 'react']} size="2x" />
-                            </li>
-                            <li>
-                                Firebase
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="bg-white shadow-xl rounded-lg overflow-hidden bg-opacity-20 h-full p-4 hover:bg-opacity-30">
-                        <div className="flex flex-row justify-between pb-2">
-                            <h2 className="font-semibold text-2xl hover:italic">Pocketbook</h2>
-                            <a className="hover:text-dark" href="https://github.com/dellahumanita/PocketBook">
-                                <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
-                            </a>
-                        </div>
-                        <p className="py-3">
-                            A book sharing app where users can share the books they have, and borrow from others.
-                        </p>
-
-                        <ul className="flex flex-row flex-wrap gap-4 pt-5">
-                            <li>
-                                <FontAwesomeIcon icon={['fab', 'java']} size="2x" />
-                            </li>
-                            <li>
-                                Firebase
-                            </li>
-                        </ul>
-                    </div>
-
-
-                </div>
 
             </div>
-        )
+
+        </div>
+    )
 }
 
 
