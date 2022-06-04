@@ -16,7 +16,7 @@ export default function Main() {
 
     return (
         <HashRouter>
-            <div className="bg-gradient-radial-at-bl from-dark via-mid to-light text-white flex flex-col h-full justify-between">
+            <div className="bg-gradient-radial-at-bl from-dark via-mid to-light text-white flex flex-col min-h-screen justify-between">
 
                 <ul className="flex flex-row justify-between text-xl md:text-2xl font-sans font-semibold px-4 py-4">
                     <li className="hover:text-dark active:text-dark">
@@ -45,7 +45,7 @@ export default function Main() {
                 </div>
 
                 <footer className="flex w-full justify-end px-4 py-2">
-                    <span>Made with ♥️ in 2022</span>
+                    <span>Made with ♥️ in React</span>
                 </footer>
             </div>
         </HashRouter>

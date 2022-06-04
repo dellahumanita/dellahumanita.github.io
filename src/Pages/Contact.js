@@ -4,6 +4,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+import { linkedin, github, email } from "../Assets/constants"
+
 function Contact() {
 
     library.add(fab, faEnvelope);
@@ -13,15 +15,15 @@ function Contact() {
 
             <div className="flex flex-row justify-between space-x-8">
                 <a className="hover:text-yellow-200"
-                    href="https://github.com/dellahumanita">
+                    href={github}>
                     <FontAwesomeIcon icon={['fab', 'github']} size="4x" />
                 </a>
                 <a className="hover:text-yellow-200"
-                    href="https://www.linkedin.com/in/dellahumanita/">
+                    href={linkedin}>
                     <FontAwesomeIcon icon={['fab', 'linkedin']} size="4x"/>
                 </a>
                 <a className="hover:text-yellow-200"
-                    href="mailto:humanita@ualberta.ca">
+                    href={email}>
                     <FontAwesomeIcon icon={faEnvelope} size="4x" />
                 </a>
             </div>
