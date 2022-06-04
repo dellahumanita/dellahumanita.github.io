@@ -9,10 +9,11 @@ const bio = "My name is Della and I am a recent Computing Science grad from the 
 
 const projects = [
     {
-        name: "LifePlus",
-        description: "A productivity web app that implements the concept of building small habits. Inspired by James Clear's book, Atomic Habits.",
-        techStack: ["Python", "Flask", "JavaScript"],
-        github: "https://github.com/dellahumanita/lifeplus"
+        name: "TikTakToe",
+        description: "A social media app where users can create, edit, share posts, and connect with other users across 3 different servers.",
+        techStack: ["Preact", "Flask", "TypeScript", "Python"],
+        github: "https://github.com/giancarlopernudisegura/cmput404",
+        demo: "http://tik-tak-toe-cmput404.herokuapp.com/app/login"
     },
     {
         name: "Ada's Team Website",
@@ -28,12 +29,12 @@ const projects = [
         github: "https://github.com/dellahumanita/PocketBook"
     },
     {
-        name: "TikTakToe",
-        description: "A social media app where users can create, edit, share posts, and connect with other users across 3 different servers.", 
-        techStack: ["Preact", "Flask", "TypeScript", "Python"],
-        github: "https://github.com/giancarlopernudisegura/cmput404",
-        demo: "http://tik-tak-toe-cmput404.herokuapp.com/app/login"
-    }
+        name: "LifePlus",
+        description: "A productivity web app that implements the concept of building small habits. Inspired by James Clear's book, Atomic Habits.",
+        techStack: ["Python", "Flask", "JavaScript"],
+        github: "https://github.com/dellahumanita/lifeplus"
+    },
+
 ]
 
 

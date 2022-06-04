@@ -5,7 +5,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
-export default function ProjectCard({details}) {
+export default function ProjectCard( { details } ) {
     library.add(fab, fas);
 
     const name = details.name;
@@ -44,7 +44,7 @@ export default function ProjectCard({details}) {
 
             <ul className="flex flex-row flex-wrap gap-4 pt-5">
                 {techStack.map((tech, i) => 
-                    <li>{tech}</li>
+                    <li key={i}>{tech}</li>
                 )}
             </ul>
         </div>
