@@ -16,6 +16,12 @@ const projects = [
         demo: "http://tik-tak-toe-cmput404.herokuapp.com/app/login"
     },
     {
+        name: "This Site!",
+        description: "My personal portfolio",
+        techStack: ["React.js"],
+        github: "https://github.com/dellahumanita/dellahumanita.github.io",
+    },
+    {
         name: "Ada's Team Website",
         description: "Brand new website to showcase the members, events and information about the student group Ada's Team",
         techStack: ["React", "Firebase"],
