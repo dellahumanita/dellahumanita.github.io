@@ -67,29 +67,27 @@ li {
     float: left;
 }
 
-li a{
-    display: block;
+.navlink{
+    display: inline-block;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     color: #2D3047;
 }
 
-li a:link{
+.navlink:link{
     color: #2D3047;
 }
-li a:visited {
+
+.navlink:visited {
     text-decoration: none;
 }
 
-li a:hover{
+.navlink:hover{
     color: #BC767B;
 }
 
-li a:active {
-    color: #BC767B;
-    text-decoration: underline;
-}
+
 
 
 b {
@@ -145,9 +143,6 @@ button a {
     color: #BC767B;
 }
 
-#about {
-    margin-bottom: 10%;
-}
 
 #about img {
     float: right;
