@@ -75,7 +75,7 @@ li a{
     color: #2D3047;
 }
 
-li a:link, .contact-links {
+li a:link{
     color: #2D3047;
 }
 li a:visited {
@@ -120,9 +120,13 @@ button {
 button:hover {
     border: #3b4483 2px solid;
 }
+button a {
+    color: #fff;
+    text-decoration: none;
+}
 
-.page-link {
-    color: #BC767B
+.page-link{
+    color: #BC767B;
 }
 
 .contact-links {
@@ -139,4 +143,17 @@ button:hover {
 
 .contact-links > a:hover {
     color: #BC767B;
+}
+
+#about {
+    margin-bottom: 10%;
+}
+
+#about img {
+    float: right;
+    border-radius: 50%;
+}
+
+#about section p {
+    padding: 3rem 2rem;
 }
