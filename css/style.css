@@ -88,8 +88,6 @@ li {
 }
 
 
-
-
 b {
     font-weight: 600;
 }
@@ -144,9 +142,15 @@ button a {
 }
 
 
+#about {
+    margin-bottom: 2rem;
+
+} 
 #about img {
     float: right;
     border-radius: 50%;
+    width: 20rem;
+    padding: 0 3rem;
 }
 
 #about section p {
