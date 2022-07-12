@@ -68,6 +68,7 @@ li {
     float: left;
 }
 
+
 .navlink {
     display: inline-block;
     text-align: left;
@@ -111,11 +112,17 @@ button {
 }
 
 button:hover {
-    border: #3b4483 2px solid;
+    border: #2D3047 2px solid;
 }
 button a {
-    color: #fff;
+    color: #2D3047;
     text-decoration: none;
+}
+
+.buttons {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .page-link{
@@ -174,3 +181,45 @@ button a {
     font-size: 1.5rem;
     text-align: center;
 }
+
+.reveal {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+/* .revealProject {
+    position: relative;
+    opacity: 0;
+}
+
+.revealProject.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
