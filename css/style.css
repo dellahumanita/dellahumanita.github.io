@@ -41,6 +41,7 @@ h1 {
 h1 > span {
     background: #fff;
     padding: 0 10px;
+
 }
 
 h2 {
@@ -67,7 +68,7 @@ li {
     float: left;
 }
 
-.navlink{
+.navlink {
     display: inline-block;
     text-align: left;
     padding: 14px 16px;
@@ -84,7 +85,7 @@ li {
 }
 
 .navlink:hover{
-    color: #BC767B;
+    font-weight: bold;
 }
 
 
@@ -94,10 +95,6 @@ b {
 
 article {
     padding-left: 1rem;
-}
-
-p {
-    margin-left: 1rem;
 }
 
 
@@ -146,13 +143,34 @@ button a {
     margin-bottom: 2rem;
 
 } 
+
 #about img {
     float: right;
     border-radius: 50%;
     width: 20rem;
-    padding: 0 3rem;
+    margin: 0 2rem;
 }
 
-#about section p {
-    padding: 3rem 2rem;
+#about article {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 769px) {
+    #about article {
+        flex-direction: column;
+    }
+    #about img {
+        width: 15rem;
+    }
+
+}
+
+#contact p {
+    margin: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
