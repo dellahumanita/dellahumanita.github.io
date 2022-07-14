@@ -35,6 +35,9 @@ h1 {
     border-bottom: 2px solid #2D3047;
     line-height: 0.1em;
     margin-bottom: 4rem;
+
+    animation: fadeIn;
+    animation-duration: 5s;
 }
 
 /* To create the line */
@@ -83,10 +86,15 @@ li {
 
 .navlink:visited {
     text-decoration: none;
+
+
 }
 
 .navlink:hover{
     font-weight: bold;
+
+    animation: shakeX;
+    animation-duration: 5s;
 }
 
 
@@ -96,28 +104,39 @@ b {
 
 article {
     padding-left: 1rem;
+
 }
 
 
 button {
     background-color: #d89ca0;
-    color: #fff;
-    border: 2px solid #2D3047;
+    color: #2D3047;
     padding: 0.5rem 1rem;
-    border: none;
+    border: 2px solid #2D3047;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 400;
+
+}
+
+button a {
+    color:#2D3047;
     cursor: pointer;
+    text-decoration: none;
+}
+
+
+button:hover, button a:hover{
+    background-color: #2D3047;
+    color: #d89ca0;
+    text-decoration: none;
 }
 
 button:hover {
-    border: #2D3047 2px solid;
+    border: 3px dashed #d89ca0;
 }
-button a {
-    color: #2D3047;
-    text-decoration: none;
-}
+
+
 
 .buttons {
     width: 25%;
@@ -156,6 +175,9 @@ button a {
     border-radius: 50%;
     width: 20rem;
     margin: 0 2rem;
+
+    animation: slideInRight;
+    animation-duration: 3s;
 }
 
 #about article {
@@ -182,44 +204,3 @@ button a {
     text-align: center;
 }
 
-.reveal {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 100%;
-    }
-
-    to {
-        margin-right: 0%;
-        width: 100%;
-    }
-}
-
-/* .revealProject {
-    position: relative;
-    opacity: 0;
-}
-
-.revealProject.active {
-    opacity: 1;
-}
-
-.active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
-}
-
-@keyframes fade-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
