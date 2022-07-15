@@ -76,7 +76,8 @@ li {
 .navlink {
     display: inline-block;
     text-align: left;
-    padding: 14px 16px;
+    margin: 10px 14px;
+    padding: 7px 8px;
     text-decoration: none;
     color: #2D3047;
 }
@@ -87,8 +88,6 @@ li {
 
 .navlink:visited {
     text-decoration: none;
-
-
 }
 
 .navlink:hover{
@@ -96,6 +95,11 @@ li {
 
     animation: shakeX;
     animation-duration: 5s;
+}
+
+.resume {
+    border: 1px solid #BC767B;
+    border-radius: 5px;
 }
 
 
@@ -165,6 +169,9 @@ button:hover {
 
 .contact-links > a:hover {
     color: #BC767B;
+
+    animation: shakeY;
+    animation-duration: 3s;
 }
 
 
@@ -272,6 +279,7 @@ button:hover {
     }
 
     50% {
-        border-color: orange;
+        border-color: #BC767B;
     }
 }
+
